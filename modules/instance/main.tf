@@ -3,6 +3,7 @@
 # Copyright 2020 IBM
 #####################################################
 
+
 resource "ibm_resource_instance" "cos_instance" {
   count             = (var.provision_cos_instance ? 1 : 0)
   name              = var.service_name
